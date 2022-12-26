@@ -56,7 +56,7 @@ function App() {
   return (
     <>
       <div className="title-search">
-        <h1>Anime Lister</h1>
+        <h1>Anime Retriever</h1>
         <form id="search-form" onSubmit={handleSearch}>
           <input ref={inputRef} type="text" placeholder="Search anime"></input>
           <button type="submit">🔍</button>
