@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import './App.css'
+import DarkMode from './DarkMode'
 
 
 function App() {
@@ -55,8 +56,11 @@ function App() {
 
   return (
     <>
+        <nav>
+        <h1 className="titler">Anime Retriever</h1>
+        <DarkMode />
+        </nav>
       <div className="title-search">
-        <h1>Anime Retriever</h1>
         <form id="search-form" onSubmit={handleSearch}>
           <input ref={inputRef} type="text" placeholder="Search anime"></input>
           <button type="submit">🔍</button>
