@@ -2,7 +2,7 @@
 
 :root {
   --blue: black;
-  --white: rgb(236, 236, 236);
+  --white: white;
 }
 
 * {
@@ -10,11 +10,23 @@
   padding: 0px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration:none
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 body {
   background: var(--background-color);
   color: var(--text-color);
   font-weight: var(--font-weight);
+  overflow: hidden;
 }
 
 body.light {
@@ -33,7 +45,7 @@ body.dark {
 .anime {
   display: grid;
   gap: 2rem;
-
+  overflow-y: scroll;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
