@@ -1,45 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
-:root {
-  --blue: black;
-  --white: white;
-}
 
 * {
   margin: 0px;
   padding: 0px;
+  color: white;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-a {
-  text-decoration:none
+nav {
+  margin-top: 1%;
 }
 
-a, a:visited, a:hover, a:active {
+a {
+  text-decoration: none
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
   color: inherit;
 }
 
 body {
-  background: var(--background-color);
-  color: var(--text-color);
-  font-weight: var(--font-weight);
   /*overflow: hidden; */
+  /* background-color: black; */
+  background-color: #1c1c1c;
   min-height: 100vh;
-}
-
-body.light {
-  --background-color: var(--white);
-  --text-color: var(--blue);
-  --font-weight: 400;
-}
-
-body.dark {
-  --background-color: var(--blue);
-  --text-color: var(--white);
-  --font-weight: 500;
 }
 
 .rules {
@@ -52,6 +43,8 @@ body.dark {
   gap: 2rem;
   overflow-y: scroll;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .anime-card {
@@ -59,6 +52,11 @@ body.dark {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #FFCC99;
+}
+
+h6 {
+  margin-top: 1%;
   color: #FFCC99;
 }
 
@@ -75,6 +73,8 @@ input {
   border-radius: 25px;
   padding: 5px;
   width: 295px;
+  background-color: white;
+  color: black;
 }
 
 img {
@@ -89,22 +89,25 @@ button {
   margin: .25em;
   height: 40px;
   width: 35px;
-  padding: auto;
+  /*padding: auto;*/
   text-align: center;
   border-radius: 50%;
   background-color: #FFCC99;
 }
 
-nav {
-  display: flex;
-  /*margin: 0 auto;*/
-}
-
 .titler {
   /*padding: 1rem 25%;*/
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  /*margin: 0 auto;*/
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 421px) {
+  .rules {
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
 
 }
